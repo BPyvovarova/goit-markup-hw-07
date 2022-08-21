@@ -1,0 +1,30 @@
+.about {
+  padding-bottom: 0;
+}
+.about__list {
+  display: flex;
+}
+.about__item {
+  max-width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.container__about-ikon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.about__title {
+  @include font(700, 14, 16, 0.03, var(--first-title-color));
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.about__text {
+  @include font(null, 14, 24, 0.03, var(--second-title-color));
+}
